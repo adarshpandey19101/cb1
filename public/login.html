@@ -206,8 +206,13 @@
                     return;
                 }
 
+<<<<<<< HEAD:login.html
                 const response = await axios.post('https://codingbits.azurewebsites.net/submit-details', formObject);
 
+=======
+                const response = await axios.post('http://localhost:3001/submit-details', formObject);
+ 
+>>>>>>> 17305b7a15ed7106528ceea25eaa95ae205d8e9f:public/login.html
                 if (response.status === 201) {
                     alert('User details saved successfully');
                     window.location.href = 'success.html';  // Redirect to the home page

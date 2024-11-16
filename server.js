@@ -52,7 +52,9 @@ app.post("/submit-details", async (req, res) => {
     res.status(400).send("Error saving user details");
   }
 });
-
+app.get("/submit-details", (req, res) => {
+  res.send("GET request to /submit-details is working. The server is connected!");
+});
 // Start Server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
